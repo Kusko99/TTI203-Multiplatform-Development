@@ -96,6 +96,18 @@ void main() {
         }
         int indice = filmes.indexWhere((filme) => filme['titulo'] == nome);
         filmes[indice] = filme;
+      case 4:
+        print("Digite o nome do filme que gostaria de deletar: ");
+        String nome = stdin.readLineSync()!;
+        // var filme = getFilme(nome, filmes);
+        print("Deseja realmente deltar o filme? (Y/N)");
+        var option = stdin.readLineSync()!;
+        if (option == "Y") {
+          filmes.removeWhere((filme) => filme['titulo'] == nome);
+          print("Filme removido com sucesso!!!");
+        }
+      case 5:
+        print("Obrigado por utilizar os nossos serviços");
     }
   }
   print("Sua lista final de filmes");
