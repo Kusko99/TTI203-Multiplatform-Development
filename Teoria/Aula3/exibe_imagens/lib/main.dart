@@ -6,7 +6,7 @@ void main() {
   //   home: Text("!!"),
   // ); // MaterialApp
 
-  var app = App();
+  var app = const App();
 
   runApp(app);
 }
