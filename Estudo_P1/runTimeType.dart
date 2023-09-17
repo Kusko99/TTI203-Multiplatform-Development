@@ -109,4 +109,17 @@ void main() {
   print(mapa2.runtimeType); //_Map<String, String>
   var mapa3 = {"item1": "Kusko", "item2": 34, "item3": true};
   print(mapa3.runtimeType); //_Map<String, Object>
+  var lembretes = {1: 'Comprar café', 2: 'ver um filme'};
+  print(lembretes.runtimeType); //_Map<int,String>
+  print(mapa3["item1"].runtimeType); //String
+
+  var chaves = mapa1.keys;
+  print(chaves.runtimeType); //_CompactIterable<dynamic>
+
+  var valores = mapa2.values;
+  print(valores.runtimeType); //_CompactIterable<String>
+
+  var entries = mapa1.entries;
+  print(entries
+      .runtimeType); //MappedIterable<dynamic, MapEntry<dynamic, dynamic>>
 }
