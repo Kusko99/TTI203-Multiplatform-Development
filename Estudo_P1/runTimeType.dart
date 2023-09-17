@@ -94,4 +94,19 @@ void main() {
   print(conjunto2.runtimeType); //_Set<Object>
   var conjunto3 = {};
   print(conjunto3.runtimeType); //_Map<dynamic,dynamic>
+  var conjunto4 = <String>{}; //_Set<String>
+  print(conjunto4.runtimeType);
+
+  //map
+  var mapa1 = {};
+  print(mapa1.runtimeType); //_Map<dynamic, dynamic>
+  var mapa2 = {
+    "alcolatra": "Daniel",
+    "jesus": "Eduardo",
+    "soneca": "Raul",
+    "cientistaMaluco": "Lucas"
+  };
+  print(mapa2.runtimeType); //_Map<String, String>
+  var mapa3 = {"item1": "Kusko", "item2": 34, "item3": true};
+  print(mapa3.runtimeType); //_Map<String, Object>
 }
